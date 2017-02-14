@@ -10,7 +10,7 @@ public class Runner {
     public static void main(String[] args) {
         int number;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            number = reader.read();
+            number = Integer.parseInt(reader.readLine());
         } catch (IOException e) {
             e.printStackTrace();
             return;
